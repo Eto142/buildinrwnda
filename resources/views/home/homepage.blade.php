@@ -883,9 +883,9 @@
                 <p>
                     Rwanda Development Board (RDB) operates an official One Stop Centre for investment registration, business licensing and all formal government approvals. For legally binding investment registration, please use the official RDB system.
                 </p>
-                <a href="https://www.rdb.rw" target="_blank" rel="noopener noreferrer">
+                {{-- <a href="https://www.rdb.rw" target="_blank" rel="noopener noreferrer">
                     Visit RDB  Rwanda Development Board ↗
-                </a>
+                </a> --}}
             </div>
 
             <div class="rdb-box">
@@ -893,9 +893,9 @@
                 <p>
                     All land-related matters in Rwanda are administered through the Rwanda Land Management and Use Authority and the Ministry of Environment. Official land processes apply to all approved projects.
                 </p>
-                <a href="https://www.lands.rw/home" target="_blank" rel="noopener noreferrer">
+                {{-- <a href="https://www.lands.rw/home" target="_blank" rel="noopener noreferrer">
                     Visit Rwanda Land Authority ↗
-                </a>
+                </a> --}}
             </div>
 
             <div class="rdb-box">
