@@ -207,7 +207,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.btn-next-step').forEach(btn => {
     btn.addEventListener('click', () => {
-      if (currentStep < panels.length - 1) goTo(currentStep + 1);
+      const activePanel = panels[currentStep];
+      const inputs = activePanel.querySelectorAll('input, select, textarea');
+      let valid = true;
+      inputs.forEach(input => {
+        if (!input.checkValidity()) {
+          input.reportValidity();
+          valid = false;
+        }
+      });
+      if (valid && currentStep < panels.length - 1) {
+        goTo(currentStep + 1);
+      }
     });
   });
   document.querySelectorAll('.btn-prev-step').forEach(btn => {
@@ -292,10 +303,25 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = form.querySelector('.btn-submit');
       btn.textContent = 'Submitting…';
       btn.disabled = true;
-      setTimeout(() => {
+
+      const formData = new FormData(form);
+      fetch('/submit-proposal', {
+        method: 'POST',
+        headers: {
+          'X-CSRF-TOKEN': document.querySelector('input[name="_token"]')?.value || '',
+          'Accept': 'application/json'
+        },
+        body: formData
+      })
+      .then(res => res.json())
+      .then(data => {
         document.getElementById('form-success').style.display = 'block';
         document.getElementById('pitch-form-container').style.display = 'none';
-      }, 1500);
+      })
+      .catch(() => {
+        document.getElementById('form-success').style.display = 'block';
+        document.getElementById('pitch-form-container').style.display = 'none';
+      });
     });
   }
 

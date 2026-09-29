@@ -1898,12 +1898,58 @@ section {
   .sectors-grid { grid-template-columns: 1fr 1fr; }
 
   /* Why Rwanda */
-  #why-rwanda { padding-left: 1.5rem; padding-right: 1.5rem; }
+  #why-rwanda { padding-left: 1.25rem; padding-right: 1.25rem; }
+  .why-header { margin-bottom: 2rem; }
+  .why-header h2 { font-size: 1.9rem; }
   .why-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .why-card {
+    padding: 1.35rem 1.25rem;
+    position: relative;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(200, 168, 75, 0.18);
+  }
+  .why-card-num {
+    position: absolute;
+    top: 1rem; right: 1rem;
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--gold);
+    background: rgba(200, 168, 75, 0.12);
+    border: 1px solid rgba(200, 168, 75, 0.25);
+    border-radius: 12px;
+    padding: 0.15rem 0.55rem;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .why-card-icon {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+  .why-card h3 {
+    font-size: 0.88rem;
+    margin-bottom: 0.5rem;
+    padding-right: 3.5rem;
+  }
+  .why-card p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
   .why-card:last-child { grid-column: span 1; }
-  .why-photo-band { grid-template-columns: 1fr; height: 240px; }
-  .why-photo-band .why-photo:last-child { display: none; }
-  .why-header h2 { font-size: 2rem; }
+  .why-photo-band {
+    grid-template-columns: repeat(3, 1fr);
+    height: 140px;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .why-photo-band .why-photo:last-child { display: block; }
+  .why-photo-caption {
+    font-size: 0.55rem;
+    padding: 0.2rem 0.4rem;
+    bottom: 0.5rem; left: 0.5rem;
+  }
 
   /* Who Apply */
   #who-apply { padding-left: 1.5rem; padding-right: 1.5rem; }

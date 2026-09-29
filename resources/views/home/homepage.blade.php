@@ -72,7 +72,9 @@
 
         <p class="hero-desc">
             An opportunity for investors to propose transformative projects<br class="hero-br">
-            for designated land in Rwanda.
+            for designated land in Rwanda. Export potential 
+Technology/innovation components
+Environmental sustainability plan
         </p>
 
         <div class="hero-actions">
@@ -402,17 +404,7 @@
         <div class="stepper-connector"></div>
         <div class="stepper-step" id="step-ind-3">
             <div class="stepper-num">3</div>
-            <div class="stepper-label">Impact</div>
-        </div>
-        <div class="stepper-connector"></div>
-        <div class="stepper-step" id="step-ind-4">
-            <div class="stepper-num">4</div>
-            <div class="stepper-label">Documents</div>
-        </div>
-        <div class="stepper-connector"></div>
-        <div class="stepper-step" id="step-ind-5">
-            <div class="stepper-num">5</div>
-            <div class="stepper-label">Final</div>
+            <div class="stepper-label">Proposal</div>
         </div>
     </div>
 
@@ -429,11 +421,21 @@
                         <input type="text" id="full-name" name="full_name" placeholder="Your full name" required>
                     </div>
                     <div class="form-field">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                </div>
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900">
+                    </div>
+                    <div class="form-field">
                         <label for="company">Company / Organisation *</label>
                         <input type="text" id="company" name="company" placeholder="Your company or organisation" required>
                     </div>
                 </div>
-                <div class="form-grid col-3">
+                <div class="form-grid col-1">
                     <div class="form-field">
                         <label for="country">Country *</label>
                         <select id="country" name="country" required>
@@ -456,24 +458,6 @@
                             <option>UAE</option>
                             <option>Other</option>
                         </select>
-                    </div>
-                    <div class="form-field">
-                        <label for="position">Position / Title</label>
-                        <input type="text" id="position" name="position" placeholder="Your position">
-                    </div>
-                    <div class="form-field">
-                        <label for="website">Website</label>
-                        <input type="url" id="website" name="website" placeholder="https://yoursite.com">
-                    </div>
-                </div>
-                <div class="form-grid">
-                    <div class="form-field">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                    </div>
-                    <div class="form-field">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900">
                     </div>
                 </div>
                 <div class="form-nav">
@@ -512,122 +496,47 @@
                 </div>
                 <div class="form-grid">
                     <div class="form-field">
-                        <label for="location">Proposed Location in Rwanda</label>
-                        <input type="text" id="location" name="location" placeholder="e.g. Eastern Province, Kigali, specific district">
-                    </div>
-                    <div class="form-field">
-                        <label for="land-required">Land Area Required (hectares) *</label>
-                        <input type="text" id="land-required" name="land_required" placeholder="e.g. 50 ha, 200 ha" required>
-                    </div>
-                </div>
-                <div class="form-grid">
-                    <div class="form-field">
                         <label for="investment">Estimated Investment (USD) *</label>
                         <input type="text" id="investment" name="estimated_investment" placeholder="e.g. $5,000,000" required>
                     </div>
                     <div class="form-field">
-                        <label for="duration">Proposed Project Duration</label>
-                        <input type="text" id="duration" name="duration" placeholder="e.g. 5 years">
+                        <label for="land-required">Land & Proposed Location Required *</label>
+                        <input type="text" id="land-required" name="land_required" placeholder="e.g. 50 ha in Eastern Province" required>
                     </div>
                 </div>
                 <div class="form-nav">
                     <button type="button" class="btn btn-outline btn-prev-step">← Back</button>
                     <button type="button" class="btn btn-primary btn-next-step" id="step2-next">
-                        <span>Next: Impact & Innovation →</span>
+                        <span>Next: Proposal & Submit →</span>
                     </button>
                 </div>
             </div>
 
-            {{-- PANEL 3: Impact & Innovation --}}
+            {{-- PANEL 3: Proposal & Submission --}}
             <div class="form-panel" id="panel-3">
-                <div class="form-section-title">Impact & Innovation</div>
-                <div class="form-grid">
-                    <div class="form-field">
-                        <label for="jobs">Expected Jobs Created</label>
-                        <input type="text" id="jobs" name="jobs_created" placeholder="e.g. 500 direct, 2,000 indirect">
-                    </div>
-                    <div class="form-field">
-                        <label for="local-impact">Expected Local Economic Impact</label>
-                        <input type="text" id="local-impact" name="local_impact" placeholder="e.g. supply chain, local procurement">
-                    </div>
-                </div>
-                <div class="form-grid">
-                    <div class="form-field">
-                        <label for="export">Export Potential</label>
-                        <input type="text" id="export" name="export_potential" placeholder="Products, markets, volumes">
-                    </div>
-                    <div class="form-field">
-                        <label for="tech">Technology / Innovation Component</label>
-                        <input type="text" id="tech" name="technology" placeholder="e.g. precision agriculture, solar, fintech">
-                    </div>
-                </div>
-                <div class="form-grid col-1">
-                    <div class="form-field">
-                        <label for="env-plan">Environmental Sustainability Plan</label>
-                        <textarea id="env-plan" name="environmental_plan" placeholder="Describe your approach to environmental responsibility, carbon footprint, water management, biodiversity etc."></textarea>
-                    </div>
-                </div>
-                <div class="form-nav">
-                    <button type="button" class="btn btn-outline btn-prev-step">← Back</button>
-                    <button type="button" class="btn btn-primary btn-next-step" id="step3-next">
-                        <span>Next: Upload Documents →</span>
-                    </button>
-                </div>
-            </div>
-
-            {{-- PANEL 4: Upload Documents --}}
-            <div class="form-panel" id="panel-4">
-                <div class="form-section-title">Upload Documents</div>
-                <p style="margin-bottom:2rem; color:rgba(248,243,235,0.6); font-size:0.9rem;">
-                    Upload supporting documents for your proposal. PDF format preferred. Maximum 25MB per file.
-                </p>
-
-                <div style="display:flex; flex-direction:column; gap:1.25rem; margin-bottom:2rem;">
-                    <div class="upload-area" id="upload-bp" tabindex="0" aria-label="Upload business plan">
-                        <input type="file" name="business_plan" accept=".pdf,.doc,.docx" style="display:none">
-                        <div class="upload-icon">📄</div>
-                        <p>Business Plan / Project Proposal<br><span>Click to browse or drag & drop</span></p>
-                    </div>
-                    <div class="upload-area" id="upload-fin" tabindex="0" aria-label="Upload financial projections">
-                        <input type="file" name="financial_projections" accept=".pdf,.xls,.xlsx" style="display:none">
-                        <div class="upload-icon">📊</div>
-                        <p>Financial Projections<br><span>Click to browse or drag & drop</span></p>
-                    </div>
-                    <div class="upload-area" id="upload-reg" tabindex="0" aria-label="Upload company registration">
-                        <input type="file" name="company_registration" accept=".pdf" style="display:none">
-                        <div class="upload-icon">📋</div>
-                        <p>Company Registration Documents<br><span>Click to browse or drag & drop</span></p>
-                    </div>
-                    <div class="upload-area" id="upload-sup" tabindex="0" aria-label="Upload supporting documents">
-                        <input type="file" name="supporting_documents" accept=".pdf,.zip" style="display:none">
-                        <div class="upload-icon">🗂️</div>
-                        <p>Supporting Documents (optional)<br><span>Click to browse or drag & drop</span></p>
-                    </div>
-                </div>
-
-                <div class="form-nav">
-                    <button type="button" class="btn btn-outline btn-prev-step">← Back</button>
-                    <button type="button" class="btn btn-primary btn-next-step" id="step4-next">
-                        <span>Next: Final Question →</span>
-                    </button>
-                </div>
-            </div>
-
-            {{-- PANEL 5: Final Question + Submit --}}
-            <div class="form-panel" id="panel-5">
-                <div class="form-section-title">Final Question</div>
+                <div class="form-section-title">Project Proposal & Pitch</div>
                 <div class="form-grid col-1 why-rwandaQ">
                     <div class="form-field">
-                        <label for="why-rwanda-q">Why should Rwanda consider your project?</label>
-                        <textarea id="why-rwanda-q" name="why_rwanda" placeholder="Tell us what makes your project uniquely suited to Rwanda  and what Rwanda gains from it." style="min-height:200px;"></textarea>
+                        <label for="why-rwanda-q">Project Executive Summary / Why Rwanda *</label>
+                        <textarea id="why-rwanda-q" name="why_rwanda" placeholder="Briefly describe your project vision, key economic impact, and why it is suited to Rwanda." style="min-height:140px;" required></textarea>
                     </div>
                 </div>
-                <div style="padding:1.5rem; background:rgba(200,168,75,0.05); border:1px solid rgba(200,168,75,0.15); margin:2rem 0; font-size:0.82rem; color:rgba(248,243,235,0.6); line-height:1.8;">
-                    By submitting this proposal, you acknowledge that submission does not guarantee land allocation or programme approval. All proposals will be assessed against programme criteria and must proceed through applicable government and RDB approval processes.
+
+                <div class="form-field" style="margin-top:1.5rem;">
+                    <label style="display:block; margin-bottom:0.5rem; font-size:0.85rem; color:var(--gold); font-weight:600;">Pitch Deck / Supporting Document (Optional)</label>
+                    <div class="upload-area" id="upload-bp" tabindex="0" aria-label="Upload proposal document">
+                        <input type="file" name="business_plan" accept=".pdf,.doc,.docx,.zip" style="display:none">
+                        <div class="upload-icon">📄</div>
+                        <p>Upload Pitch Deck or Business Proposal<br><span>Click to browse or drag & drop (PDF, DOCX)</span></p>
+                    </div>
+                </div>
+
+                <div style="padding:1.25rem; background:rgba(200,168,75,0.05); border:1px solid rgba(200,168,75,0.15); border-radius:6px; margin:1.5rem 0; font-size:0.8rem; color:rgba(248,243,235,0.6); line-height:1.7;">
+                    By submitting this proposal, you acknowledge that submission does not guarantee land allocation or programme approval. All proposals will be assessed against official criteria via applicable RDB approval processes.
                 </div>
                 <div class="form-nav">
                     <button type="button" class="btn btn-outline btn-prev-step">← Back</button>
-                    <button type="submit" class="btn btn-primary btn-submit" id="submit-proposal-btn" style="padding:1rem 3rem;">
+                    <button type="submit" class="btn btn-primary btn-submit" id="submit-proposal-btn" style="padding:0.9rem 2.5rem;">
                         <span>Submit Proposal →</span>
                     </button>
                 </div>
