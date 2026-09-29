@@ -284,45 +284,73 @@ Environmental sustainability plan
 
     <div class="why-grid">
         <div class="why-card reveal">
-            <div class="why-card-num">01</div>
-            <div class="why-card-icon">📍</div>
-            <h3>Strategic Location</h3>
+            <div class="why-card-top">
+                <div class="why-card-header">
+                    <span class="why-card-icon">📍</span>
+                    <h3>Strategic Location</h3>
+                </div>
+                <span class="why-card-num">01</span>
+            </div>
             <p>At the heart of East and Central Africa, Rwanda provides access to a regional market of over 200 million people  a gateway to both the EAC and COMESA blocs.</p>
         </div>
         <div class="why-card reveal reveal-d1">
-            <div class="why-card-num">02</div>
-            <div class="why-card-icon">🏛️</div>
-            <h3>Investment Ecosystem</h3>
+            <div class="why-card-top">
+                <div class="why-card-header">
+                    <span class="why-card-icon">🏛️</span>
+                    <h3>Investment Ecosystem</h3>
+                </div>
+                <span class="why-card-num">02</span>
+            </div>
             <p>Ranked among Africa's top business destinations, Rwanda offers investor-friendly policies, low corruption, political stability and streamlined regulatory processes.</p>
         </div>
         <div class="why-card reveal reveal-d2">
-            <div class="why-card-num">03</div>
-            <div class="why-card-icon">👩‍🎓</div>
-            <h3>Skilled Workforce</h3>
+            <div class="why-card-top">
+                <div class="why-card-header">
+                    <span class="why-card-icon">👩‍🎓</span>
+                    <h3>Skilled Workforce</h3>
+                </div>
+                <span class="why-card-num">03</span>
+            </div>
             <p>A young, educated and growing workforce with increasing technical and professional skills. Rwanda invests heavily in education and vocational training.</p>
         </div>
         <div class="why-card reveal">
-            <div class="why-card-num">04</div>
-            <div class="why-card-icon">📡</div>
-            <h3>Digital Infrastructure</h3>
+            <div class="why-card-top">
+                <div class="why-card-header">
+                    <span class="why-card-icon">📡</span>
+                    <h3>Digital Infrastructure</h3>
+                </div>
+                <span class="why-card-num">04</span>
+            </div>
             <p>One of Africa's most connected nations, with high-speed fibre coverage across the country and a government committed to a knowledge-based economy.</p>
         </div>
         <div class="why-card reveal reveal-d1">
-            <div class="why-card-num">05</div>
-            <div class="why-card-icon">📊</div>
-            <h3>Growing Economy</h3>
+            <div class="why-card-top">
+                <div class="why-card-header">
+                    <span class="why-card-icon">📊</span>
+                    <h3>Growing Economy</h3>
+                </div>
+                <span class="why-card-num">05</span>
+            </div>
             <p>Consistent GDP growth, a stable currency, low inflation and a track record of delivering national development goals through Vision 2050.</p>
         </div>
         <div class="why-card reveal reveal-d2">
-            <div class="why-card-num">06</div>
-            <div class="why-card-icon">🌍</div>
-            <h3>Regional Market Access</h3>
+            <div class="why-card-top">
+                <div class="why-card-header">
+                    <span class="why-card-icon">🌍</span>
+                    <h3>Regional Market Access</h3>
+                </div>
+                <span class="why-card-num">06</span>
+            </div>
             <p>Membership of the EAC, COMESA and AfCFTA  giving investors preferential access to the world's largest free trade area covering 54 African nations.</p>
         </div>
-        <div class="why-card reveal" style="grid-column: span 3;">
-            <div class="why-card-num">07</div>
-            <div class="why-card-icon">⚙️</div>
-            <h3>Investment Facilitation</h3>
+        <div class="why-card reveal why-card-full">
+            <div class="why-card-top">
+                <div class="why-card-header">
+                    <span class="why-card-icon">⚙️</span>
+                    <h3>Investment Facilitation</h3>
+                </div>
+                <span class="why-card-num">07</span>
+            </div>
             <p>The Rwanda Development Board operates a world-class One Stop Centre  handling business registration, licences, environmental clearances and investment approvals in a single location. RDB's priority sectors include agriculture, energy, manufacturing, ICT, infrastructure, tourism and real estate.</p>
         </div>
     </div>
