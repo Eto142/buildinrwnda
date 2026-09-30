@@ -298,9 +298,13 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ── Form submit ── */
   const form = document.getElementById('pitch-form');
   if (form) {
+    const errorBox = document.getElementById('form-error');
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const btn = form.querySelector('.btn-submit');
+      const originalLabel = btn.textContent;
+      errorBox.hidden = true;
+      errorBox.textContent = '';
       btn.textContent = 'Submitting…';
       btn.disabled = true;
 
@@ -313,14 +317,23 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         body: formData
       })
-      .then(res => res.json())
+      .then(async (res) => {
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok || !data.success) {
+          const validationErrors = Object.values(data.errors || {}).flat();
+          throw new Error(validationErrors.join(' ') || data.message || 'Your proposal could not be submitted. Please try again.');
+        }
+        return data;
+      })
       .then(data => {
         document.getElementById('form-success').style.display = 'block';
         document.getElementById('pitch-form-container').style.display = 'none';
       })
-      .catch(() => {
-        document.getElementById('form-success').style.display = 'block';
-        document.getElementById('pitch-form-container').style.display = 'none';
+      .catch((error) => {
+        errorBox.textContent = error.message;
+        errorBox.hidden = false;
+        btn.textContent = originalLabel;
+        btn.disabled = false;
       });
     });
   }

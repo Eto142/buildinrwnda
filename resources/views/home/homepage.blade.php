@@ -439,6 +439,7 @@ Environmental sustainability plan
     <div class="pitch-form-wrap" id="pitch-form-container">
         <form id="pitch-form" novalidate>
             @csrf
+            <div id="form-error" role="alert" aria-live="polite" hidden style="margin-bottom:1rem; color:#ffb4a9;"></div>
 
             {{-- PANEL 1: Applicant Information --}}
             <div class="form-panel active" id="panel-1">

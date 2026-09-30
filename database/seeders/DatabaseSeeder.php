@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
+use App\Models\Admin;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -15,11 +15,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        if (env('ADMIN_NAME') && env('ADMIN_EMAIL') && env('ADMIN_PASSWORD')) {
+            Admin::updateOrCreate(
+                ['email' => env('ADMIN_EMAIL')],
+                [
+                    'name' => env('ADMIN_NAME'),
+                    'password' => env('ADMIN_PASSWORD'),
+                ]
+            );
+        }
     }
 }
